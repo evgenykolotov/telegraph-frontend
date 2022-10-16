@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  template: '<router-outlet></router-outlet>',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: true,
+  imports: [RouterModule],
 })
-export class AppComponent {
-  public title = 'telegraph-frontend';
-}
+export class AppComponent { }
