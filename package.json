@@ -1,9 +1,9 @@
 {
   "name": "telegraph-frontend",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --proxy-config proxy-config.json --poll 1000 --host 0.0.0.0",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
@@ -21,6 +21,13 @@
     "@angular/platform-browser": "^14.2.5",
     "@angular/platform-browser-dynamic": "^14.2.5",
     "@angular/router": "^14.2.5",
+    "@ngneat/until-destroy": "^9.2.2",
+    "@ngxs-labs/actions-executing": "^0.1.9",
+    "@ngxs-labs/select-snapshot": "^4.0.0",
+    "@ngxs/store": "^3.7.5",
+    "normalize.css": "^8.0.1",
+    "primeicons": "^6.0.1",
+    "primeng": "^14.1.2",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
@@ -34,6 +41,7 @@
     "@angular-eslint/template-parser": "^14.1.2",
     "@angular/cli": "^14.2.5",
     "@angular/compiler-cli": "^14.2.5",
+    "@ngxs/devtools-plugin": "^3.7.5",
     "@types/jasmine": "~3.10.0",
     "@types/node": "^12.11.1",
     "@typescript-eslint/eslint-plugin": "^5.39.0",

@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  frontend:
+    build:
+      context: ./
+      dockerfile: Dockerfile.production
+    ports:
+      - "80:80"
+    networks:
+      - frontend
+
+networks:
+  frontend:
+    name: cloud_drive_network
+    

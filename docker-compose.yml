@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    volumes:
+      - .:/app
+      - /app/node_modules
+    ports:
+      - 4200:4200
+    command: npm run start
+    

@@ -41,7 +41,8 @@
           }
         ],
         "@typescript-eslint/lines-between-class-members": "off",
-        "@typescript-eslint/explicit-member-accessibility": "error"
+        "@typescript-eslint/explicit-member-accessibility": "error",
+        "@typescript-eslint/naming-convention": "off"
       }
     },
     {

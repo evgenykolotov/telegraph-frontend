@@ -1,0 +1,11 @@
+.git
+dist
+.cache
+.gitignore
+README.md
+node_modules
+.dockerignore
+Dockerfile
+Dockerfile.production
+docker-compose.yml
+docker-compose.production.yml
