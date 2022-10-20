@@ -3,6 +3,7 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app/app.component';
 import { environment } from './environments/environment';
 import { NgxsFormPluginModule } from '@ngxs/form-plugin';
+import { AuthState } from './app/features/auth/store/auth.state';
 import { enableProdMode, importProvidersFrom } from '@angular/core';
 import { NgxsReduxDevtoolsPluginModule } from '@ngxs/devtools-plugin';
 import { NgxsSelectSnapshotModule } from '@ngxs-labs/select-snapshot';
@@ -20,7 +21,7 @@ bootstrapApplication(AppComponent, {
   providers: [importProvidersFrom([
     BrowserModule,
     BrowserAnimationsModule,
-    NgxsModule.forRoot([], {
+    NgxsModule.forRoot([AuthState], {
       developmentMode: !environment.production,
     }),
     NgxsFormPluginModule.forRoot(),
